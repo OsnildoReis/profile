@@ -11,23 +11,21 @@ export function Content() {
     return (
         <Container>
             <Contents>
-                <Sections id="about"  >
-                    <div style={{ height: "100%", padding: "4rem 2rem", display: "flex", justifyContent: "center" }}>
-                        <div style={{ height: "100%", width: "70%", background: "#f4f9ff", padding: "4rem", boxShadow: "1px 1px 5px rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", gap: "2rem" }}>
-                            <h5 style={{ textAlign: "center" }} >SOBRE NÓS</h5>
-                            <label style={{ color: "#19275D", fontSize: "1.3rem" }} >Dr. <strong>Osnildo Oliveira Reis</strong> é advogado, fundador do escritório digital <strong>Osnildo Reis Advocacia Especializada</strong>, inscrito na OAB/SP através do nº 475.409</label>
-                            <p>Dr. Osnildo Reis é advogado especialista em Direito Trabalho e Processo do Trabalho, com atuação profissional no escritório digital <strong>OSNILDO REIS ADVOCACIA ESPECIALIZADA</strong>, também advogado parceiro de escritórios de advocacia localizados no Estado de São Paulo, Acre e Rondônia.</p>
-                            <p>Em Cosmópolis/SP, atua como advogado parceiro do renomado escritório de advocacia Ateliê Jurídico do experiente advogado Dr. Edilson Elias Leite. Já no Acre, atua como advogado parceiro do escritório de advocacia Victor Andrade na cidade de Cruzeiro do Sul/AC. Por fim, em Rondônia, atua com parceira com o Dr. Luiz Fernando Torrejaes Romero, na cidade de Jaru/RO. </p>
-                            <p>Dr. Osnildo, em 2022 fundou o renomado escritório digital <strong>OSNILDO REIS ADVOCACIA ESPECIALIZADA</strong>, para melhor atender os seus clientes, dando-lhes o conforto necessário para um atendimento de muita qualidade e humanizado onde não existe limites geográficos para sua atuação.</p>
-                        </div>
+                <Sections id="about">
+                    <div id="aboutCard" >
+                        <h5 style={{ textAlign: "center" }} >SOBRE NÓS</h5>
+                        <label style={{ color: "#19275D", fontSize: "1.3rem" }} >Dr. <strong>Osnildo Oliveira Reis</strong> é advogado, fundador do escritório digital <strong>Osnildo Reis Advocacia Especializada</strong>, inscrito na OAB/SP através do nº 475.409</label>
+                        <p>Dr. Osnildo Reis é advogado especialista em Direito Trabalho e Processo do Trabalho, com atuação profissional no escritório digital <strong>OSNILDO REIS ADVOCACIA ESPECIALIZADA</strong>, também advogado parceiro de escritórios de advocacia localizados no Estado de São Paulo, Acre e Rondônia.</p>
+                        <p>Em Cosmópolis/SP, atua como advogado parceiro do renomado escritório de advocacia Ateliê Jurídico do experiente advogado Dr. Edilson Elias Leite. Já no Acre, atua como advogado parceiro do escritório de advocacia Victor Andrade na cidade de Cruzeiro do Sul/AC. Por fim, em Rondônia, atua com parceira com o Dr. Luiz Fernando Torrejaes Romero, na cidade de Jaru/RO. </p>
+                        <p>Dr. Osnildo, em 2022 fundou o renomado escritório digital <strong>OSNILDO REIS ADVOCACIA ESPECIALIZADA</strong>, para melhor atender os seus clientes, dando-lhes o conforto necessário para um atendimento de muita qualidade e humanizado onde não existe limites geográficos para sua atuação.</p>
                     </div>
                 </Sections>
-                <Sections id="atuacao" bgColor="#FFF" >
-                    <div style={{ display: "flex", flexDirection: "column", textAlign: "center", padding: "8rem 2rem 2rem", gap: "1rem" }}>
-                        <span>ATUAÇÃO</span>
+                <Sections id="atuacao" >
+                    <div id="atuacaoTitle">
+                        <h5>ATUAÇÃO</h5>
                         <span style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Nosso grande diferencial é o atendimento acolhedor</span>
                     </div>
-                    <div style={{ display: "flex", justifyContent: "space-between", justifyItems: "center", padding: "2rem", gap: "1rem" }} >
+                    <div id="atuacaoCards" >
                         <Cards>
                             <BsListCheck className="icon" />
                             <h2>Nossas áreas de atuação</h2>
@@ -59,37 +57,35 @@ export function Content() {
 
                     </div>
                 </Sections>
-                <Sections id="profile" bgColor="#FFF" >
-                    <div style={{ textAlign: "center", paddingTop: "8rem" }} >
+                <Sections id="profile" >
+                    <div id="profileTitle" >
                         <h5>ADVOGADO</h5>
                         <span style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Dr. Osnildo Oliveira Reis</span>
                     </div>
-                    <div style={{ height: "80%", padding: "4rem 2rem", display: "flex", justifyContent: "center" }}>
-                        <div style={{ height: "100%", width: "70%", background: "#f4f9ff", padding: "4rem", boxShadow: "1px 1px 5px rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", gap: "2rem" }}>
-                            <p style={{ fontSize: "2rem" }} >
-                                Inscrito na OAB/SP através do nº 475.409
-                            </p>
-                            <p>
-                                Dr. Osnildo é especialista em Direito do Trabalho e Processo do Trabalho. Graduado pelo UNASP – Centro Universitário Adventista de São Paulo campus Engenheiro Coelho no ano de 2020.
-                            </p>
-                            <p>
-                                Além disso, é pós-graduando em Gestão de Pessoas Por Competência pelo Centro Universitário Adventista de Ensino.
-                            </p>
-                            <p>
-                                Finalmente, Dr. Osnildo Reis atua de forma bastante especializada em ações trabalhistas e indenizatórias, tendo sido contratado por clientes de todo Brasil ao desde que iniciou suas atividades na advocacia especializada.
-                            </p>
-                            <p>
-                                <a href="mailto:advogadoosnildo.reis@gmail.com">advogadoosnildo.reis@gmail.com</a>
-                            </p>
-                        </div>
+                    <div id="profileCard" >
+                        <p style={{ fontSize: "2rem" }} >
+                            Inscrito na OAB/SP através do nº 475.409
+                        </p>
+                        <p>
+                            Dr. Osnildo é especialista em Direito do Trabalho e Processo do Trabalho. Graduado pelo UNASP – Centro Universitário Adventista de São Paulo campus Engenheiro Coelho no ano de 2020.
+                        </p>
+                        <p>
+                            Além disso, é pós-graduando em Gestão de Pessoas Por Competência pelo Centro Universitário Adventista de Ensino.
+                        </p>
+                        <p>
+                            Finalmente, Dr. Osnildo Reis atua de forma bastante especializada em ações trabalhistas e indenizatórias, tendo sido contratado por clientes de todo Brasil ao desde que iniciou suas atividades na advocacia especializada.
+                        </p>
+                        <p>
+                            <a href="mailto:advogadoosnildo.reis@gmail.com">advogadoosnildo.reis@gmail.com</a>
+                        </p>
                     </div>
                 </Sections>
-                <Sections id="contact" bgColor="#FFF" >
-                    <div style={{ textAlign: "center", paddingTop: "8rem", display: "flex", flexDirection: "column", gap: "1rem" }} >
+                <Sections id="contact" >
+                    <div id="contactTitle"  >
                         <h5>O ESCRITORIO</h5>
                         <span style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Localização e Contato</span>
                     </div>
-                    <div style={{ display: "flex", justifyContent: "center", gap: "1rem", marginTop: "3rem", marginBottom:"3rem" }} >
+                    <div id="contactCards" >
                         <Cards bg="rgba(0,0,0,0.02)">
                             <BsTelephone className="icon" />
                             <h5>Telefones</h5>

@@ -7,10 +7,10 @@ export function Header() {
     function changeheaderStyle() {
         const hdr = document.querySelector("header");
 
-        if (window.scrollY > 200 && hdr?.classList.contains("t")) {
+        if (window.scrollY > 100 && hdr?.classList.contains("t")) {
             hdr?.classList.remove("t");
             hdr?.classList.add("t2");
-        } else if (window.scrollY <= 200 && hdr?.classList.contains("t2")) {
+        } else if (window.scrollY <= 100 && hdr?.classList.contains("t2")) {
             hdr?.classList.remove("t2");
             hdr?.classList.add("t");
         }

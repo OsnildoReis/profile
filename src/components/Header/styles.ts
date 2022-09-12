@@ -25,7 +25,7 @@ export const Container = styled.header`
             color: #000;
         }
         
-    }
+    }    
 `
 
 export const Content = styled.div`
@@ -54,4 +54,23 @@ export const Content = styled.div`
             filter: brightness(0.8);
         }
     }
+
+    @media(max-width:800px ){
+       flex-direction: column;
+       gap: 1rem;
+
+       ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .25rem;
+            justify-content: center;
+            
+       }
+
+       ul li{
+            /* margin: 10px; */
+       }
+    }
+    
 `

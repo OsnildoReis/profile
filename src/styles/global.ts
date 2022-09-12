@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body, input, textarea, button{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', 'Roboto', Verdana, sans-serif;
         font-weight: 400;
     }
 
@@ -65,5 +65,18 @@ export const GlobalStyle = createGlobalStyle`
         background: #555; 
     }
     
+    #imgTitle{
+       display: flex; 
+       height: 100%; 
+       width: 100%; 
+       align-items: center; 
+       padding-left: 16rem;
+    }
+
+    @media(max-width: 800px){
+        #imgTitle{
+            padding-left: 2rem;            
+        }
+    }
 
 `

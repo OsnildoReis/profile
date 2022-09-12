@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardsStyle = styled.div`
    padding: 3rem 1.5rem;
-   width: 400px;
+   width: 100%;
    text-align: center;
    align-items: center;
    display: flex;
