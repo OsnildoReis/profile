@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Container, Content } from "./styles";
 
 export function Header() {
