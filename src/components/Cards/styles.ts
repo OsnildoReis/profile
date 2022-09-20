@@ -8,6 +8,7 @@ export const CardsStyle = styled.div`
    display: flex;
    flex-direction: column;   
    gap: 1.5rem;
+   background: rgba(17, 58, 63, .05);
    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 
    .icon{

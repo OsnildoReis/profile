@@ -22,17 +22,18 @@ export const WhatsLogo = styled.a`
     color: white;
     font-size: 1.1rem;
     font-weight: 900;
-    border-radius: .3rem;
-    transition: .5s;
+    border-radius: .3rem;    
 
     &:hover{
-        background-color: rgba(7, 94, 84, 1);
-        transition: .5s;
+        background-color: rgba(17, 58, 63, 1);
+        transition: .3s;
+       border: 1px solid white;
    }
 
     .icon{
         width: 1rem;
-        height: 1rem;    
+        height: 1rem;   
+        color: white;
    }
 
   

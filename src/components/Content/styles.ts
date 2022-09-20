@@ -4,6 +4,7 @@ export const Container = styled.main`
     background-color: #FFF;
 `
 export const Contents = styled.div`
+
     max-width: 81rem;
     margin: 0 auto;    
     display: flex;
@@ -15,12 +16,14 @@ export const Contents = styled.div`
         padding: 4rem 2rem; 
         display:flex; 
         justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     #aboutCard{
         height: 100%; 
-        width: 70%; 
-        background: #f4f9ff;
+        width: 60%; 
+        background: rgba(17, 58, 63, .05);
         padding: 4rem; 
         box-shadow: 1px 1px 5px rgba(0,0,0,0.1); 
         display: flex;
@@ -49,21 +52,26 @@ export const Contents = styled.div`
         align-items: center;
         gap: 1rem;
     }
-
+    #profileLayout{
+        display: flex;
+        justify-content: space-between;
+        background: rgba(17, 58, 63, .05);
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1); 
+    }
     #profileTitle{
         text-align: center; 
         padding-top: 8rem; 
     }
-
     #profileCard{       
         height: 100%;
         width: 70%;
         padding: 4rem; 
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        background: #f4f9ff;
-        box-shadow: 1px 1px 5px rgba(0,0,0,0.1); 
+        gap: 2rem;       
+    }   
+    #imgPerfil{
+        width: 25vw;
     }
 
     #contactTitle{
@@ -84,12 +92,15 @@ export const Contents = styled.div`
 
     @media(max-width: 800px){
         #about{
-            display: block;
-            padding: 1rem;            
+            flex-direction: column;
+            padding: 8rem 1rem 1rem 1rem;            
         }
         #aboutCard{
             width: 100%; 
             padding: 2rem 1rem;
+        }
+        #aboutLogo{
+            display: none;
         }
         #atuacaoTitle{
             padding: 10rem 2rem 2rem; 
@@ -98,12 +109,19 @@ export const Contents = styled.div`
             flex-direction: column;  
             align-items :center;
         }
-        #contactCards{
-            flex-direction: column;
-        }
         #profileCard{
             width: 100%; 
             padding: 2rem 1rem;            
         }
+        #profileLayout{
+            flex-direction: column;
+        }
+        #imgPerfil{
+            width: 100vw;
+         }
+        #contactCards{
+            flex-direction: column;
+        }
+        
     }
 `
