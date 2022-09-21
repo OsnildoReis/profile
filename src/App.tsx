@@ -22,7 +22,6 @@ export function App() {
 
       <Content />
       <Footer />
-
     </>
   );
 }
