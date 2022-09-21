@@ -1,5 +1,5 @@
 import { FooterStyled, WhatsLogo, EndButton } from "./styles";
-import { BsWhatsapp, BsArrowUpShort } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { IoMdArrowRoundUp } from 'react-icons/io'
 
 export function Footer() {
