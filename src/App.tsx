@@ -6,7 +6,7 @@ import { HomeLogo } from './components/HomeLogo';
 
 export function App() {
 
-
+  
   return (
     <>
       <GlobalStyle />
